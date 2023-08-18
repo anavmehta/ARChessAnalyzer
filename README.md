@@ -7,7 +7,6 @@ The ARChessAnalyzer app provides live Augmented Reality feedback of the next bes
 
 A player starts by pointing the app live capture to a chessboard. The board position is then determined using a mix of vision and image processing techniques and prediction from machine learning models of pieces and the board. Using the board position, a chess engine computes the next best move and then a "chess diagram" of the position and the move is superimposed on the chessboard. The Augmented Reality feedback to the player takes between 2-3.5sec. By default, white moves first and alternates in subsequent moves.
 
-The app was developed on a MacAir in Swift in Xcode (iOS) using bridging headers/ObjectiveC to open source OpenCV and StockFish C++ libraries (publicly available on GitHub). A chessboard image classifier was created using CreateML and a chesspiece object detection deep neural network model (CaffeNet) was created using Caffe in Google Colab in Python using Nvidia GPUs and converted to CoreML.
 
 The following is the detection pipeline:
 
